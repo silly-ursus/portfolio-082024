@@ -1,14 +1,14 @@
 {
   "pages": {
-    "/garden/page": [
+    "/thoughts/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/garden/page.js"
+      "static/chunks/app/thoughts/page.js"
     ],
-    "/garden/layout": [
+    "/thoughts/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/garden/layout.js"
+      "static/chunks/app/thoughts/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -20,6 +20,16 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
+    ],
+    "/garden/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/garden/page.js"
+    ],
+    "/garden/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/garden/layout.js"
     ]
   }
 }
