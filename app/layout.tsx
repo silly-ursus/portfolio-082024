@@ -9,7 +9,8 @@ export default function RootLayout({
     return (
       <html lang="en">
         <title>M. Molder | Web Dev</title>
-        <body className="bg-zinc-800 bg-gradient-to-t from-slate-500">{children}
+        <body className="bg-zinc-800 bg-gradient-to-t from-slate-500">
+            {children}
         <div className="border-t-2 border-cyan-500 p-20 flex flex-col justify-between">
             <p className="text-white">LinkedIn | GitHub | Mastodon | BlueSky</p>
             <p className="text-white">© 2024 M. Molder</p>
