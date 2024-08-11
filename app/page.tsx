@@ -1,14 +1,5 @@
 import React from "react";
-  import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-  } from "../@/components/ui/navigation-menu"
+
   import {
     Accordion,
     AccordionContent,
@@ -28,7 +19,7 @@ import React from "react";
     HoverCardContent,
     HoverCardTrigger,
   } from "../@/components/ui/hover-card"
-  import { Switch } from "../@/components/ui/switch"
+
   import { Tabs, TabsContent, TabsList, TabsTrigger } from "../@/components/ui/tabs"
   import Image from 'next/image'
   import picImg from "../public/assets/Halftone Illustrations by Oblik Studio/PNG/Biking-3200x2400-colored.png"
@@ -37,36 +28,7 @@ import React from "react";
 export default function Page() {
     return (
         <>
-            <div className="text-slate-400 ml-8 pt-10 text-right">
-                <NavigationMenu>
-                    <NavigationMenuList>
-                        <NavigationMenuItem>                        
-                        <NavigationMenuTrigger className="mr-4 text-lg">Navigation</NavigationMenuTrigger>
-                        <NavigationMenuContent className="p-2">
-                            <NavigationMenuLink>
-                                <a href="/"><p className="">Home</p></a>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink>
-                                <a href="garden"><p className="my-2">Garden</p></a>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink>
-                                <a href="thoughts"><p className="">Stream of Consciousness</p></a>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink>
-                                <a href="/"><p className="my-2">Anti-Portfolio</p></a>
-                            </NavigationMenuLink>
-                            <NavigationMenuLink>
-                            <a href="/"><p className="">About</p></a>
-                            </NavigationMenuLink>                            
-                        </NavigationMenuContent>
-                        <p className="text-cyan-400 mx-4 inline text-lg">Now</p>
-                        <p className="text-cyan-500  inline">Dark Mode Toggle</p> <Switch className="ml-4 inline" />                        
-                        </NavigationMenuItem>
-                    </NavigationMenuList>
-                </NavigationMenu>
-            </div>
             <div className="container mx-auto rounded-lg mt-10 mb-20">
-
                 <h1 className="text-stone-100 text-9xl font-bold font-['portia'] sepia inline">M. Molder</h1>
                 <p className="inline text-stone-300 mt-10 text-lg animate-pulse">currently hireable!</p>
                 <p className="text-stone-200 text-2xl">Web Developer, sound designer, video game enthusiast, and general digital adventurer.</p>
@@ -77,10 +39,7 @@ export default function Page() {
                         A Digital Garden is a personal space for cultivating ideas.
                     </HoverCardContent>
                 </HoverCard>
-                <a className="mt-4 block text-cyan-400" href="/">Start Here.
-                </a>
-
-
+                <a className="mt-4 block text-cyan-400" href="/">Start Here.</a>
                 <div className="flex flex-row justify-between">
                     <Card className="bg-transparent border-none max-w-96 mt-10 shadow-none">
                         <CardHeader>
@@ -130,19 +89,19 @@ export default function Page() {
                         <AccordionItem value="item-1">
                             <AccordionTrigger>1Password</AccordionTrigger>
                             <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                                March 2019 - October 2023
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
                             <AccordionTrigger>The Coding Space</AccordionTrigger>
                             <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                                January 2019 - March 2019
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
                             <AccordionTrigger>The Software Guild</AccordionTrigger>
                             <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                                May 2018 - January 2019
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
@@ -151,19 +110,19 @@ export default function Page() {
                         <AccordionItem value="item-1">
                             <AccordionTrigger>Twin Strangers Productions</AccordionTrigger>
                             <AccordionContent className="text-stone-100">
-                            Things I did go here because they're super cool
+                                March 2023 - Present
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
                             <AccordionTrigger>Contract & Consulting</AccordionTrigger>
                             <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                                December 2022 - Present
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
                             <AccordionTrigger>The Moon Crown</AccordionTrigger>
                             <AccordionContent>
-                            Yes. It adheres to the WAI-ARIA design pattern.
+                                May 2022 - Present
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
