@@ -80,8 +80,6 @@ export default function Page() {
                         <CardTitle className="text-stone-200 text-3xl font-bold shadow-none">Experience</CardTitle>
                         <CardDescription>Where I am, Where I've Been</CardDescription>
                         <p className="text-stone-200 text-xl">Hi, it's really a pleasure to meet you. Pretty Mediocre photographic fakery, they cut off your brother's hair. Oh, just a little weather experiment. I can't believe you loaned me a car, without telling me it had a blindspot. I could've been killed. Doc.</p>
-                        <p className="text-stone-200 text-xl">Hey beat it, spook, this don't concern you. Mom, Dad. Um, yeah, I'm on my way. You don't understand. Calvin.</p>
-                        <p className="text-stone-200 text-xl mt-4 italic">Yeah, he's right here. Your not gonna be picking a fight, Dad, dad dad daddy-o. You're coming to a rescue, right? Okay, let's go over the plan again. 8:55, where are you gonna be. Oh. Hey, George, buddy, you weren't at school, what have you been doing all day? No.</p>
                     </CardHeader>
                     <CardContent>
                     <p className="text-slate-200 text-2xl font-bold mt-4">Web Development</p>
