@@ -49,7 +49,7 @@ async function BlogPostPage({ params }: BlogPostPageProps) {
 	}
 
 	return (
-		<main className="p-[6vw]">
+		<main className="p-[6vw] text-stone-100">
 			<Link className="text-cyan-300" href="/garden">← Posts</Link>
 			<div className="prose mt-8 border-t pt-8">
 				{/* Render the blog post image */}

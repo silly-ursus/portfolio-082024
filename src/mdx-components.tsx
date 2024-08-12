@@ -11,7 +11,7 @@ import React from 'react';
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
-    h1: ({ children }) => <h1 className='text-stone-200 text-3xl p-4'>{children}</h1>,
+    h1: ({ children }) => <h1 className='text-stone-600 text-3xl p-4'>{children}</h1>,
     h2: ({ children }) => <h2 className='text-stone-700 text-xl p-4'>{children}</h2>,
     p: ({children}) => <p className='text-lg'>{children}</p>,
     ul: ({children}) => <ul className='text-stone-500 list-disc ml-20'>{children}</ul>,

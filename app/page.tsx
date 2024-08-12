@@ -12,7 +12,6 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "../@/components/ui/hover-card";
-
 import {
   Tabs,
   TabsContent,
@@ -20,119 +19,128 @@ import {
   TabsTrigger,
 } from "../@/components/ui/tabs";
 import Image from "next/image";
-import picImg from "../public/assets/Halftone Illustrations by Oblik Studio/PNG/Biking-3200x2400-colored.png";
-import { LinkPreview } from "../@/components/ui/link-preview";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "../@/components/ui/accordion";
 
 export default function Page() {
   return (
     <>
       <div className="container mx-auto rounded-lg mt-10 mb-20">
-        <h1 className="text-stone-100 text-9xl font-bold font-['portia'] sepia inline">
+        <h1 className=" text-9xl font-bold font-['portia'] inline">
           M. Molder
         </h1>
-        <p className="inline text-stone-300 mt-10 text-lg animate-pulse">
+        <p className="inline  mt-10 text-lg animate-pulse">
           currently hireable!
         </p>
-        <p className="text-stone-200 text-2xl">
+        <p className=" text-2xl">
           Web Developer, sound designer, video game enthusiast, and general
           digital adventurer.
         </p>
-        <p className="text-stone-200 text-xl mt-4 italic inline-block">
+        <p className=" text-xl mt-4 italic inline-block">
           Welcome to my
         </p>
         <HoverCard>
-          <HoverCardTrigger className="mx-2 text-stone-200 bg-cyan-900 bg-opacity-50 underline text-xl">
+          <HoverCardTrigger className="mx-2  bg-cyan-100 bg-opacity-50 text-xl">
             Digital Garden.
           </HoverCardTrigger>
           <HoverCardContent>
             A Digital Garden is a personal space for cultivating ideas.
           </HoverCardContent>
         </HoverCard>
-        <p className="text-stone-200 inline-block text-xl">
+        <p className=" inline-block text-xl">
           Start exploring{" "}
           <a
-            className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-cyan-400 to-stone-200"
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-br underline from-cyan-400 to-stone-400"
             href="/garden"
           >
             {" "}
-            Here.
+            here.
           </a>
         </p>
         <div className="flex flex-row justify-between">
-          <Card className="bg-transparent border-none max-w-96 mt-10 shadow-none">
-            <CardHeader>
-              <CardTitle className="text-stone-200 text-3xl font-bold">
-                Articles
-              </CardTitle>
-              <CardDescription>Thoughts on things</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-slate-200">blah</p>
-              <p className="text-slate-200">blah</p>
-              <p className="text-slate-200">blah</p>
-            </CardContent>
-          </Card>
           <Card className="bg-transparent border-none mt-10 shadow-none">
-            <CardHeader>
-              <div className="flex flex-wrap justify-between mb-10">
-                <Image
-                  src={picImg}
-                  width={250}
-                  height={250}
-                  className="inline border-x-4 border-b-8 border-t-4 border-slate-100"
-                  alt="Picture of the author"
-                />
-                <Image
-                  src={picImg}
-                  width={250}
-                  height={250}
-                  className="inline mx-4 border-x-4 border-b-8 border-t-4 border-slate-100"
-                  alt="Picture of the author"
-                />
-                <Image
-                  src={picImg}
-                  width={250}
-                  height={250}
-                  className="inline border-x-4 border-b-8 border-t-4 border-slate-100"
-                  alt="Picture of the author"
-                />
-              </div>
-              <CardTitle className="text-stone-200 text-3xl font-bold shadow-none">
-                Experience
+          <CardHeader>
+              <CardTitle className=" text-3xl font-bold shadow-none">
+                Work
               </CardTitle>
               <CardDescription>Where I am, Where I've Been</CardDescription>
-              <p className="text-stone-200 text-xl">
-                Hi, it's really a pleasure to meet you. Pretty Mediocre
-                photographic fakery, they cut off your brother's hair. Oh, just
-                a little weather experiment. I can't believe you loaned me a
-                car, without telling me it had a blindspot. I could've been
-                killed. Doc.
+              <p className=" text-xl">
+                I work as a Full Stack Developer, having started my career in teaching before moving into the wild world of start-ups. I'm passionate about accessibility, personal security on the web, and education.
               </p>
-              <p className="text-stone-200 dark:text-neutral-400 text-xl">
-                I listen to{" "}
-              </p>
-              <LinkPreview
-                url="https://ui.aceternity.com"
-                className="inline font-bold bg-clip-text text-transparent bg-gradient-to-br from-cyan-400 to-stone-200"
-              >
-                {" "}
-                this guy{" "}
-              </LinkPreview>
             </CardHeader>
-            <CardContent></CardContent>
+            <CardContent>
+              <p className=" text-2xl font-bold mt-4">
+                Web Development
+              </p>
+              <Accordion type="single" collapsible className="">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>1Password</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="italic underline">
+                      March 2019 - October 2023
+                    </p>
+                    <p className="mt-4">
+                      After my experience with teaching, I was ready to dive
+                      back into hands-on programming. I joined 1Password in
+                      March 2019 as their 128th employee. While working on the
+                      web team, I helped maintain and later migrate an SSG Hugo
+                      website to an SSR React, Next, and Netlify site (the
+                      latter stack being what this very site uses as well!)
+                      There were several subdomains to maintain the code for,
+                      such as the 1Password Blog and their Support site, along
+                      with other internal repositories that helped keep things
+                      running.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>The Coding Space</AccordionTrigger>
+                  <AccordionContent>January 2019 - March 2019</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>The Software Guild</AccordionTrigger>
+                  <AccordionContent>May 2018 - January 2019</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+              <p className=" text-2xl font-bold mt-4">
+                Entertainment
+              </p>
+              <Accordion type="single" collapsible className="">
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>
+                    Twin Strangers Productions
+                  </AccordionTrigger>
+                  <AccordionContent className="">
+                    March 2023 - Present
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-2">
+                  <AccordionTrigger>Contract & Consulting</AccordionTrigger>
+                  <AccordionContent>December 2022 - Present</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger>The Moon Crown</AccordionTrigger>
+                  <AccordionContent>May 2022 - Present</AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </CardContent>
           </Card>
         </div>
         <Card className="bg-transparent mt-4">
           <CardHeader>
-            <CardTitle className="text-stone-200 text-3xl font-bold">
+            <CardTitle className=" text-3xl font-bold">
               Reviews
             </CardTitle>
-            <CardDescription className="text-slate-200">
+            <CardDescription className="">
               My thoughts on media
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Tabs defaultValue="account" className="w-[400px] text-slate-300">
+            <Tabs defaultValue="account" className="w-[400px]">
               <TabsList>
                 <TabsTrigger value="Books">Books</TabsTrigger>
                 <TabsTrigger value="Podcasts">Podcasts</TabsTrigger>

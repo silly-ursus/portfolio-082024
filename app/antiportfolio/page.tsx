@@ -17,25 +17,10 @@ import {
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto rounded-lg mt-10 mb-20">
+      <div className="container p-24 bg-black mx-auto rounded-lg mt-10 mb-20">
         <h1 className="text-stone-100 text-9xl font-bold font-['portia'] sepia inline">
           Anti-portfolio
         </h1>
-        <p className="text-stone-200 text-2xl">Where ideas come to grow.</p>
-        <p className="text-stone-200 text-xl mt-4 italic inline-block">
-          Welcome to my
-        </p>
-        <HoverCard>
-          <HoverCardTrigger className="ml-2 text-cyan-300 underline text-xl">
-            Digital Garden.
-          </HoverCardTrigger>
-          <HoverCardContent>
-            A Digital Garden is a personal space for cultivating ideas.
-          </HoverCardContent>
-        </HoverCard>
-        <a className="mt-4 block text-cyan-400" href="/">
-          Start Here.
-        </a>
         <div className="flex flex-row justify-between">
           <Card className="bg-transparent border-none max-w-96 mt-10 shadow-none">
             <CardHeader>

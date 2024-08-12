@@ -19,21 +19,21 @@ export default function Page() {
   return (
     <>
       <div className="container mx-auto rounded-lg mt-10 mb-20">
-        <h1 className="text-stone-100 text-9xl font-bold font-['portia'] sepia inline">
+        <h1 className="text-9xl font-bold font-['portia'] inline">
           About
         </h1>
-        <p className="text-stone-200 text-2xl">
+        <p className="text-2xl">
           Web Developer, sound designer, video game enthusiast, and general
           digital adventurer.
         </p>
         <div className="flex flex-row justify-between">
           <Card className="bg-transparent border-none mt-10 shadow-none">
             <CardHeader>
-              <CardTitle className="text-stone-200 text-3xl font-bold shadow-none">
+              <CardTitle className="text-3xl font-bold shadow-none">
                 Experience
               </CardTitle>
               <CardDescription>Where I am, Where I've Been</CardDescription>
-              <p className="text-stone-200 text-xl">
+              <p className="text-xl">
                 Hi, it's really a pleasure to meet you. Pretty Mediocre
                 photographic fakery, they cut off your brother's hair. Oh, just
                 a little weather experiment. I can't believe you loaned me a
@@ -42,10 +42,10 @@ export default function Page() {
               </p>
             </CardHeader>
             <CardContent>
-              <p className="text-slate-200 text-2xl font-bold mt-4">
+              <p className="text-2xl font-bold mt-4">
                 Web Development
               </p>
-              <Accordion type="single" collapsible className="text-stone-300">
+              <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>1Password</AccordionTrigger>
                   <AccordionContent>
@@ -75,15 +75,15 @@ export default function Page() {
                   <AccordionContent>May 2018 - January 2019</AccordionContent>
                 </AccordionItem>
               </Accordion>
-              <p className="text-slate-200 text-2xl font-bold mt-4">
+              <p className="text-2xl font-bold mt-4">
                 Entertainment
               </p>
-              <Accordion type="single" collapsible className="text-stone-300">
+              <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
                     Twin Strangers Productions
                   </AccordionTrigger>
-                  <AccordionContent className="text-stone-100">
+                  <AccordionContent>
                     March 2023 - Present
                   </AccordionContent>
                 </AccordionItem>

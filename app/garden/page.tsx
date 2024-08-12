@@ -11,7 +11,7 @@ async function Home() {
 
 	return (
 		<main className="p-[6vw]">
-			<div className="prose bg-white p-24">
+			<div className="prose p-24">
       <h1 className="text-emerald-500 text-9xl font-bold font-['portia'] inline">
           The Garden
         </h1>

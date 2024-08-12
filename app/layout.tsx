@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>M. Molder | Web Dev</title>
-      <body className="bg-zinc-900">
-        <div className="text-slate-400 ml-8 pt-10 text-right">
+      <body className="px-24">
+        <div className="text-slate-500 ml-8 pt-10 text-right">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -40,13 +40,8 @@ export default function RootLayout({
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>
-                    <a href="thoughts">
-                      <p className="">Stream of Consciousness</p>
-                    </a>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink>
                     <a href="droplets">
-                      <p className="my-2">Spout</p>
+                      <p className="my-2">Droplets</p>
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>
@@ -55,8 +50,8 @@ export default function RootLayout({
                     </a>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
-                <p className="text-cyan-400 mx-4 inline text-lg">Now</p>
-                <p className="text-cyan-500  inline">Dark Mode Toggle</p>{" "}
+                <p className="text-cyan-400 mx-4 inline text-lg">Stream of Consciousness</p>
+                <p className="text-cyan-500  hidden">Dark Mode Toggle</p>{" "}
                 <Switch className="ml-4 inline" />
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -64,8 +59,8 @@ export default function RootLayout({
         </div>
         {children}
         <div className="p-20 flex flex-col justify-between">
-          <p className="text-white">LinkedIn | GitHub | Mastodon | BlueSky</p>
-          <p className="text-white">© 2024 M. Molder</p>
+          <p><a href="https://www.linkedin.com/in/mmolder/">LinkedIn </a> | <a href="https://github.com/silly-ursus">GitHub</a> | Mastodon | BlueSky</p>
+          <p>© 2024 M. Molder</p>
           <div className="text-right text-slate-400 mr-24">
             <a href="/">
               <p className="inline">Home | </p>
@@ -76,10 +71,7 @@ export default function RootLayout({
             <a href="thoughts">
               <p className="inline">Stream of Consciousness | </p>
             </a>
-            <a href="/">
-              <p className="inline">Anti-Portfolio | </p>
-            </a>
-            <a href="/">
+            <a href="/about">
               <p className="inline">About</p>
             </a>
           </div>
