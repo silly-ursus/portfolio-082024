@@ -45,8 +45,8 @@ export default function RootLayout({
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>
-                    <a href="antiportfolio">
-                      <p className="my-2">Anti-Portfolio</p>
+                    <a href="contentful-tester">
+                      <p className="my-2">Soil</p>
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>
