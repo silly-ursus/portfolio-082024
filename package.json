@@ -37,7 +37,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier-eslint \"src/**/*.tsx\", \"app/**/*.tsx\"",
+    "format": "prettier-eslint --write \"src/**/*.tsx\", \"app/**/*.tsx\"",
     "lint": "next lint",
     "setup": "node ./@/lib/setup.js"
   },
