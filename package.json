@@ -19,11 +19,17 @@
     "@types/mdx": "^2.0.13",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "contentful": "^10.13.2",
+    "contentful-import": "^9.4.56",
+    "cross-env": "^7.0.3",
+    "framer-motion": "^11.3.24",
     "lucide-react": "^0.424.0",
+    "prettier-eslint-cli": "^8.0.1",
+    "qss": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "tailwind-merge": "^2.4.0",
+    "tailwind-merge": "^2.5.0",
     "tailwindcss-animate": "^1.0.7",
     "web-vitals": "^2.1.4"
   },
@@ -31,7 +37,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "prettier-eslint \"src/**/*.tsx\", \"app/**/*.tsx\"",
+    "lint": "next lint",
+    "setup": "node ./@/lib/setup.js"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +63,7 @@
     "autoprefixer": "^10.4.20",
     "next": "^14.2.5",
     "postcss": "^8.4.41",
+    "prettier-eslint": "^16.3.0",
     "tailwindcss": "^3.4.7"
   },
   "description": "here we go again",

@@ -20,7 +20,7 @@ export default function RootLayout({
     return (
       <html lang="en">
         <title>M. Molder | Web Dev</title>
-        <body className="bg-zinc-800 bg-gradient-to-t from-slate-500">
+        <body className="bg-zinc-900">
             <div className="text-slate-400 ml-8 pt-10 text-right">
                     <NavigationMenu>
                         <NavigationMenuList>

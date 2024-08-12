@@ -14,10 +14,6 @@ import React from "react";
     HoverCardTrigger,
   } from "../../@/components/ui/hover-card"
 
-  import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../@/components/ui/tabs"
-  import Image from 'next/image'
-
-
 export default function Page() {
     return (
         <>
@@ -31,10 +27,8 @@ export default function Page() {
                         A Digital Garden is a personal space for cultivating ideas.
                     </HoverCardContent>
                 </HoverCard>
-                <a className="mt-4 block text-cyan-400" href="/">Start Here.
+        <a className="mt-4 block text-cyan-400" href="/">Start Here.
                 </a>
-
-
                 <div className="flex flex-row justify-between">
                     <Card className="bg-transparent border-none max-w-96 mt-10 shadow-none">
                         <CardHeader>

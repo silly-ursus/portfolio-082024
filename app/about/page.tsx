@@ -9,13 +9,11 @@ import React from "react";
     CardTitle,
   } from "../../@/components/ui/card"
   import {
-    HoverCard,
-    HoverCardContent,
-    HoverCardTrigger,
-  } from "../../@/components/ui/hover-card"
-
-  import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../@/components/ui/tabs"
-  import Image from 'next/image'
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger,
+  } from "../../@/components/ui/accordion"
 
 
 export default function Page() {
@@ -24,28 +22,63 @@ export default function Page() {
             <div className="container mx-auto rounded-lg mt-10 mb-20">
                 <h1 className="text-stone-100 text-9xl font-bold font-['portia'] sepia inline">About</h1>
                 <p className="text-stone-200 text-2xl">Web Developer, sound designer, video game enthusiast, and general digital adventurer.</p>
-                <p className="text-stone-200 text-xl mt-4 italic inline-block">Welcome to my</p>
-                <HoverCard>
-                    <HoverCardTrigger className="ml-2 text-cyan-300 underline text-xl">Digital Garden.</HoverCardTrigger>
-                    <HoverCardContent>
-                        A Digital Garden is a personal space for cultivating ideas.
-                    </HoverCardContent>
-                </HoverCard>
-                <a className="mt-4 block text-cyan-400" href="/">Start Here.
-                </a>
-
-
                 <div className="flex flex-row justify-between">
-                    <Card className="bg-transparent border-none max-w-96 mt-10 shadow-none">
-                        <CardHeader>
-                            <CardTitle className="text-stone-200 text-3xl font-bold">Articles</CardTitle>
-                            <CardDescription>Thoughts on things</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-slate-200">Who? What, well you mean like a date? You extol me with a lot of confidence, Doc. My god, they found me. I don't know how but they found me. Run for it, Marty. My god, they found me. I don't know how but they found me. Run for it, Marty. Oh honey, he's teasing you, nobody has two television sets.</p>
-                            <p className="text-slate-200">Hey boy, are you alright? Alright, let's set your destination time. This is the exact time you left. I'm gonna send you back at exactly the same time. It's be like you never left. Now, I painted a white line on the street way over there, that's where you start from. I've calculated the distance and wind resistance fresh to active from the moment the lightning strikes, at exactly 7 minutes and 22 seconds. When this alarm goes off you hit the gas. Right about here. I think you got the wrong car, McFly. Marty, don't go this way. Strickland's looking for you. If you're caught it'll be four tardies in a row.</p>
-                            <p className="text-slate-200">Marty, I'm sorry, but the only power source capable of generating one point twenty-one gigawatts of electricity is a bolt of lightning. Good morning. Alright, let's set your destination time. This is the exact time you left. I'm gonna send you back at exactly the same time. It's be like you never left. Now, I painted a white line on the street way over there, that's where you start from. I've calculated the distance and wind resistance fresh to active from the moment the lightning strikes, at exactly 7 minutes and 22 seconds. When this alarm goes off you hit the gas. Go. Go. George: you ever think of running for class president?</p>
-                        </CardContent>
+                <Card className="bg-transparent border-none mt-10 shadow-none">
+                    <CardHeader>
+                        <CardTitle className="text-stone-200 text-3xl font-bold shadow-none">Experience</CardTitle>
+                        <CardDescription>Where I am, Where I've Been</CardDescription>
+                        <p className="text-stone-200 text-xl">Hi, it's really a pleasure to meet you. Pretty Mediocre photographic fakery, they cut off your brother's hair. Oh, just a little weather experiment. I can't believe you loaned me a car, without telling me it had a blindspot. I could've been killed. Doc.</p>
+                    </CardHeader>
+                    <CardContent>
+                    <p className="text-slate-200 text-2xl font-bold mt-4">Web Development</p>
+                    <Accordion type="single" collapsible className="text-stone-300">
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>1Password</AccordionTrigger>
+                            <AccordionContent>
+                                <p className="italic underline">March 2019 - October 2023</p>
+                                <p className="mt-4">After my experience with teaching, I was ready to dive back into hands-on programming.
+                                    I joined 1Password in March 2019 as their 128th employee. While working on the web team, 
+                                    I helped maintain and later migrate an SSG Hugo website to an SSR React, Next, and Netlify site (the latter stack being what this very site uses as well!)
+                                    There were several subdomains to maintain the code for, such as the 1Password Blog and their Support site, along with other internal repositories that helped keep things running.
+                                    </p>
+
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger>The Coding Space</AccordionTrigger>
+                            <AccordionContent>
+                                January 2019 - March 2019
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>The Software Guild</AccordionTrigger>
+                            <AccordionContent>
+                                May 2018 - January 2019
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                    <p className="text-slate-200 text-2xl font-bold mt-4">Entertainment</p>
+                    <Accordion type="single" collapsible className="text-stone-300">
+                        <AccordionItem value="item-1">
+                            <AccordionTrigger>Twin Strangers Productions</AccordionTrigger>
+                            <AccordionContent className="text-stone-100">
+                                March 2023 - Present
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger>Contract & Consulting</AccordionTrigger>
+                            <AccordionContent>
+                                December 2022 - Present
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-3">
+                            <AccordionTrigger>The Moon Crown</AccordionTrigger>
+                            <AccordionContent>
+                                May 2022 - Present
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                    </CardContent>
                     </Card>
                 </div>      
     </div>
