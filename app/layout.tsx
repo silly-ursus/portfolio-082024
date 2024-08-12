@@ -45,8 +45,8 @@ export default function RootLayout({
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>
-                    <a href="contentful-tester">
-                      <p className="my-2">Soil</p>
+                    <a href="droplets">
+                      <p className="my-2">Spout</p>
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink>

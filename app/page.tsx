@@ -141,9 +141,9 @@ export default function Page() {
               </TabsList>
               <TabsContent value="Books">
                 <ul>
-                  <li>Ubik ⭐⭐⭐⭐⭐</li>
-                  <li>Neuromancer ⭐⭐⭐⭐</li>
-                  <li>The Poisonwood Bible ⭐⭐⭐⭐</li>
+                  <li>Ubik</li>
+                  <li>Neuromancer</li>
+                  <li>The Poisonwood Bible</li>
                 </ul>
               </TabsContent>
               <TabsContent value="Podcasts">
@@ -162,16 +162,16 @@ export default function Page() {
               </TabsContent>
               <TabsContent value="Movies">
                 <ul>
-                  <li>The Matrix ⭐⭐⭐⭐⭐</li>
-                  <li>My Neighbor Totoro ⭐⭐⭐⭐⭐</li>
-                  <li>Kiki's Delivery Service ⭐⭐⭐⭐⭐</li>
+                  <li>The Matrix</li>
+                  <li>My Neighbor Totoro</li>
+                  <li>Kiki's Delivery Service</li>
                 </ul>
               </TabsContent>
               <TabsContent value="Games">
                 <ul>
-                  <li>Bioshock ⭐⭐⭐⭐⭐</li>
-                  <li>Omori ⭐⭐⭐⭐</li>
-                  <li>Fallout 3 ⭐⭐⭐⭐</li>
+                  <li>Bioshock</li>
+                  <li>Omori</li>
+                  <li>Fallout 3</li>
                 </ul>
               </TabsContent>
             </Tabs>

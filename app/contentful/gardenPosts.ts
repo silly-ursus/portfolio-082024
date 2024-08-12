@@ -4,47 +4,47 @@ import { Document as RichTextDocument } from '@contentful/rich-text-types'
 import contentfulClient from './contentfulClient'
 import { ContentImage, parseContentfulContentImage } from './contentImage'
 
-type gardenPost = Entry<TypeEntrySkeleton, undefined, string>
+type blogPost = Entry<TypeEntrySkeleton, undefined, string>
 
 // Our simplified version of a BlogPost.
 // We don't need all the data that Contentful gives us.
-export interface GardenPost {
+export interface BlogPost {
 	title: string
-	slug: string | undefined
+	slug: string
 	body: RichTextDocument | null
 	image: ContentImage | null
 }
 
 // A function to transform a Contentful blog post
 // into our own BlogPost object.
-export function parseContentfulBlogPost(gardenPost?: gardenPost): GardenPost | null {
-	if (!gardenPost) {
+export function parseContentfulBlogPost(blogPost?: blogPost): BlogPost | null {
+	if (!blogPost) {
 		return null
 	}
 
 	return {
-		title: gardenPost.fields.entryTitle || '',
-		slug: gardenPost.fields.slug,
-		body: gardenPost.fields.postContent || null,
-		image: parseContentfulContentImage(gardenPost.fields.articleImage),
+		title: blogPost.fields.entryTitle || '',
+		slug: blogPost.fields.slug || '',
+		body: blogPost.fields.details || null,
+		image: parseContentfulContentImage(blogPost.fields.articleImage),
 	}
 }
 
 // A function to fetch all blog posts.
 // Optionally uses the Contentful content preview.
-interface FetchgardenPostsOptions {
+interface FetchblogPostsOptions {
 	preview: boolean
 }
-export async function fetchGardenPosts({ preview }: FetchgardenPostsOptions): Promise<GardenPost[]> {
+export async function fetchBlogPosts({ preview }: FetchblogPostsOptions): Promise<BlogPost[]> {
 	const contentful = contentfulClient({ preview })
 
-	const gardenPostsResult = await contentful.getEntries<TypeEntrySkeleton>({
+	const blogPostsResult = await contentful.getEntries<TypeEntrySkeleton>({
 		content_type: 'entry',
 		include: 2,
 		order: ['fields.entryTitle'],
 	})
 
-	return gardenPostsResult.items.map((gardenPost) => parseContentfulBlogPost(gardenPost) as GardenPost)
+	return blogPostsResult.items.map((blogPost) => parseContentfulBlogPost(blogPost) as BlogPost)
 }
 
 // A function to fetch a single blog post by its slug.
@@ -53,14 +53,14 @@ interface FetchBlogPostOptions {
 	slug: string
 	preview: boolean
 }
-export async function fetchBlogPost({ slug, preview }: FetchBlogPostOptions): Promise<GardenPost | null> {
+export async function fetchBlogPost({ slug, preview }: FetchBlogPostOptions): Promise<BlogPost | null> {
 	const contentful = contentfulClient({ preview })
 
-	const gardenPostsResult = await contentful.getEntries<TypeEntrySkeleton>({
+	const blogPostsResult = await contentful.getEntries<TypeEntrySkeleton>({
 		content_type: 'entry',
 		'fields.slug': slug,
 		include: 2,
 	})
 
-	return parseContentfulBlogPost(gardenPostsResult.items[0])
+	return parseContentfulBlogPost(blogPostsResult.items[0])
 }

@@ -1,5 +1,5 @@
 import { draftMode } from 'next/headers'
-import { fetchGardenPosts } from '../contentful/gardenPosts'
+import { fetchBlogPosts } from '../contentful/gardenPosts'
 import Link from 'next/link'
 import React from 'react'
 import { Separator } from '../../@/components/ui/separator'
@@ -7,7 +7,7 @@ import { Separator } from '../../@/components/ui/separator'
 async function Home() {
 	// Fetch blog posts using the content preview
 	// if draft mode is enabled:
-	const gardenPosts = await fetchGardenPosts({ preview: draftMode().isEnabled })
+	const gardenPosts = await fetchBlogPosts({ preview: draftMode().isEnabled })
 
 	return (
 		<main className="p-[6vw]">
