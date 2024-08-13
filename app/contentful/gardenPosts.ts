@@ -6,8 +6,7 @@ import { ContentImage, parseContentfulContentImage } from './contentImage'
 
 type blogPost = Entry<TypeEntrySkeleton, undefined, string>
 
-// Our simplified version of a BlogPost.
-// We don't need all the data that Contentful gives us.
+// Our simplified version of a BlogPost. We don't need all the data that Contentful gives us.
 export interface BlogPost {
 	title: string
 	slug: string
@@ -15,8 +14,7 @@ export interface BlogPost {
 	image: ContentImage | null
 }
 
-// A function to transform a Contentful blog post
-// into our own BlogPost object.
+// A function to transform a Contentful blog post into our own BlogPost object.
 export function parseContentfulBlogPost(blogPost?: blogPost): BlogPost | null {
 	if (!blogPost) {
 		return null
@@ -30,8 +28,7 @@ export function parseContentfulBlogPost(blogPost?: blogPost): BlogPost | null {
 	}
 }
 
-// A function to fetch all blog posts.
-// Optionally uses the Contentful content preview.
+// A function to fetch all blog posts. Optionally uses the Contentful content preview.
 interface FetchblogPostsOptions {
 	preview: boolean
 }
@@ -47,8 +44,7 @@ export async function fetchBlogPosts({ preview }: FetchblogPostsOptions): Promis
 	return blogPostsResult.items.map((blogPost) => parseContentfulBlogPost(blogPost) as BlogPost)
 }
 
-// A function to fetch a single blog post by its slug.
-// Optionally uses the Contentful content preview.
+// A function to fetch a single blog post by its slug. Optionally uses the Contentful content preview.
 interface FetchBlogPostOptions {
 	slug: string
 	preview: boolean

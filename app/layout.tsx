@@ -21,7 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <title>M. Molder | Web Dev</title>
       <body className="px-24">
-        <div className="text-slate-500 ml-8 pt-10 text-right">
+        <div className="text-slate-500 pt-10 right-0 flex flex-row justify-between">
+          <p className="font-bold text-2xl bg-clip-text text-transparent bg-gradient-to-br underline from-cyan-400 to-stone-400"><a href="/">🍃</a></p>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
