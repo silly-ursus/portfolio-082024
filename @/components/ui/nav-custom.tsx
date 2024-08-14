@@ -7,7 +7,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     NavigationMenuViewport, } from "./navigation-menu";
-    import React from "react";
+import React from "react";
 import { Switch } from "./switch";
 
 export const NavCustom = () => (
