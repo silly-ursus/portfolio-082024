@@ -12,9 +12,9 @@ export default function RootLayout({
     <html lang="en">
       <title>M. Molder | Web Dev</title>
       <body className="px-24">
-        <NavCustom/>
+        <NavCustom />
         {children}
-        <FooterCustom/>
+        <FooterCustom />
       </body>
     </html>
   );

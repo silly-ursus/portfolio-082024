@@ -20,11 +20,11 @@ import {
 } from "../@/components/ui/tabs";
 import Image from "next/image";
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "../@/components/ui/accordion";
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../@/components/ui/accordion";
 
 export default function Page() {
   return (
@@ -40,9 +40,7 @@ export default function Page() {
           Web Developer, sound designer, video game enthusiast, and general
           digital adventurer.
         </p>
-        <p className=" text-xl mt-4 italic inline-block">
-          Welcome to my
-        </p>
+        <p className=" text-xl mt-4 italic inline-block">Welcome to my</p>
         <HoverCard>
           <HoverCardTrigger className="mx-2  bg-cyan-100 bg-opacity-50 text-xl">
             Digital Garden.
@@ -63,19 +61,20 @@ export default function Page() {
         </p>
         <div className="flex flex-row justify-between">
           <Card className="bg-transparent border-none mt-10 shadow-none">
-          <CardHeader>
+            <CardHeader>
               <CardTitle className=" text-3xl font-bold shadow-none">
                 Work
               </CardTitle>
               <CardDescription>Where I am, Where I've Been</CardDescription>
               <p className=" text-xl">
-                I work as a Full Stack Developer, having started my career in teaching before moving into the wild world of start-ups. I'm passionate about accessibility, personal security on the web, and education.
+                I work as a Full Stack Developer, having started my career in
+                teaching before moving into the wild world of start-ups. I'm
+                passionate about accessibility, personal security on the web,
+                and education.
               </p>
             </CardHeader>
             <CardContent>
-              <p className=" text-2xl font-bold mt-4">
-                Web Development
-              </p>
+              <p className=" text-2xl font-bold mt-4">Web Development</p>
               <Accordion type="single" collapsible className="">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>1Password</AccordionTrigger>
@@ -106,9 +105,7 @@ export default function Page() {
                   <AccordionContent>May 2018 - January 2019</AccordionContent>
                 </AccordionItem>
               </Accordion>
-              <p className=" text-2xl font-bold mt-4">
-                Entertainment
-              </p>
+              <p className=" text-2xl font-bold mt-4">Entertainment</p>
               <Accordion type="single" collapsible className="">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
@@ -132,12 +129,8 @@ export default function Page() {
         </div>
         <Card className="bg-transparent mt-4">
           <CardHeader>
-            <CardTitle className=" text-3xl font-bold">
-              Reviews
-            </CardTitle>
-            <CardDescription className="">
-              My thoughts on media
-            </CardDescription>
+            <CardTitle className=" text-3xl font-bold">Reviews</CardTitle>
+            <CardDescription className="">My thoughts on media</CardDescription>
           </CardHeader>
           <CardContent>
             <Tabs defaultValue="account" className="w-[400px]">
