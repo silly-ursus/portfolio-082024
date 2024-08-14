@@ -18,9 +18,9 @@ import {
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto rounded-lg mt-10 mb-20">
+      <div className="container mx-auto rounded-lg mt-10">
         <h1 className="text-9xl font-bold font-['portia'] inline">
-          About
+          M. Molder
         </h1>
         <p className="text-2xl">
           Web Developer, sound designer, video game enthusiast, and general
@@ -30,69 +30,39 @@ export default function Page() {
           <Card className="bg-transparent border-none mt-10 shadow-none">
             <CardHeader>
               <CardTitle className="text-3xl font-bold shadow-none">
-                Experience
+                About
               </CardTitle>
-              <CardDescription>Where I am, Where I've Been</CardDescription>
+              <CardDescription>The person behind the keyboard</CardDescription>
               <p className="text-xl">
-                Hi, it's really a pleasure to meet you. Pretty Mediocre
-                photographic fakery, they cut off your brother's hair. Oh, just
-                a little weather experiment. I can't believe you loaned me a
-                car, without telling me it had a blindspot. I could've been
-                killed. Doc.
+              Since you're here, you probably want to know a little bit about me. I'm a Full Stack Engineer working in Web Development. I'm all about making sure I help my team out however I can, but in my time away from work, I'm your quintessential nerd.
+              </p>
+              <p className="text-xl">
+              Video games, creating video games, programming, anime, plain old tv (With a surname like mine, you'd better believe I grew up on X-Files). I'm majorly into all of it. I'm even a bit of a music geek. Aside from that, I'm big on crafts and like to sew and draw when I'm not in front of a screen.
               </p>
             </CardHeader>
             <CardContent>
               <p className="text-2xl font-bold mt-4">
-                Web Development
-              </p>
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>1Password</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="italic underline">
-                      March 2019 - October 2023
-                    </p>
-                    <p className="mt-4">
-                      After my experience with teaching, I was ready to dive
-                      back into hands-on programming. I joined 1Password in
-                      March 2019 as their 128th employee. While working on the
-                      web team, I helped maintain and later migrate an SSG Hugo
-                      website to an SSR React, Next, and Netlify site (the
-                      latter stack being what this very site uses as well!)
-                      There were several subdomains to maintain the code for,
-                      such as the 1Password Blog and their Support site, along
-                      with other internal repositories that helped keep things
-                      running.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>The Coding Space</AccordionTrigger>
-                  <AccordionContent>January 2019 - March 2019</AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-3">
-                  <AccordionTrigger>The Software Guild</AccordionTrigger>
-                  <AccordionContent>May 2018 - January 2019</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-              <p className="text-2xl font-bold mt-4">
-                Entertainment
+                Hobbies
               </p>
               <Accordion type="single" collapsible>
                 <AccordionItem value="item-1">
                   <AccordionTrigger>
-                    Twin Strangers Productions
+                    Film & Animation
                   </AccordionTrigger>
                   <AccordionContent>
                     March 2023 - Present
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger>Contract & Consulting</AccordionTrigger>
+                  <AccordionTrigger>Sound Design</AccordionTrigger>
                   <AccordionContent>December 2022 - Present</AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>The Moon Crown</AccordionTrigger>
+                  <AccordionTrigger>Gaming</AccordionTrigger>
+                  <AccordionContent>May 2022 - Present</AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-4">
+                  <AccordionTrigger>Handwork</AccordionTrigger>
                   <AccordionContent>May 2022 - Present</AccordionContent>
                 </AccordionItem>
               </Accordion>

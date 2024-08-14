@@ -14,7 +14,7 @@ export default function RootLayout({
       <body className="px-24">
         <NavCustom/>
         {children}
-      <FooterCustom/>
+        <FooterCustom/>
       </body>
     </html>
   );

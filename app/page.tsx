@@ -29,7 +29,7 @@ import {
 export default function Page() {
   return (
     <>
-      <div className="container mx-auto rounded-lg mt-10 mb-20">
+      <div className="container mx-auto rounded-lg mt-10">
         <h1 className=" text-9xl font-bold font-['portia'] inline">
           M. Molder
         </h1>
