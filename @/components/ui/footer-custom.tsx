@@ -22,7 +22,7 @@ export const FooterCustom = () => (
         </a>
     </div>
     <p>© 2024 M. Molder</p>
-        <div className="text-right text-slate-400 mr-24">
+        <div className="text-right mr-24">
         <a href="/">
             <p className="inline">Home | </p>
         </a>

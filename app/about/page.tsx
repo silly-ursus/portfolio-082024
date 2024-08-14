@@ -31,8 +31,8 @@ export default function Page() {
             <CardHeader className="flex flex-row">
               <Image
                 src={profileImage}
-                width={500}
-                height={500}
+                width={400}
+                height={400}
                 className="rounded-full mb-12"
                 alt=""
               />
