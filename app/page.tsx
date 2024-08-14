@@ -127,57 +127,6 @@ export default function Page() {
             </CardContent>
           </Card>
         </div>
-        <Card className="bg-transparent mt-4">
-          <CardHeader>
-            <CardTitle className=" text-3xl font-bold">Reviews</CardTitle>
-            <CardDescription className="">My thoughts on media</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Tabs defaultValue="account" className="w-[400px]">
-              <TabsList>
-                <TabsTrigger value="Books">Books</TabsTrigger>
-                <TabsTrigger value="Podcasts">Podcasts</TabsTrigger>
-                <TabsTrigger value="Movies">Movies</TabsTrigger>
-                <TabsTrigger value="Games">Games</TabsTrigger>
-              </TabsList>
-              <TabsContent value="Books">
-                <ul>
-                  <li>Ubik</li>
-                  <li>Neuromancer</li>
-                  <li>The Poisonwood Bible</li>
-                </ul>
-              </TabsContent>
-              <TabsContent value="Podcasts">
-                <ul>
-                  <li>Syntax</li>
-                  <li>Cryptid Counselor</li>
-                  <li>The Supernatural Protection Company</li>
-                  <li>Wireland Ranch</li>
-                  <li>The Liminal Lands</li>
-                  <li>Desert Skies</li>
-                  <li>October's Children</li>
-                  <li>Where the Leaves Fall Purple</li>
-                  <li>Untrue Stories</li>
-                  <li>Criminal</li>
-                </ul>
-              </TabsContent>
-              <TabsContent value="Movies">
-                <ul>
-                  <li>The Matrix</li>
-                  <li>My Neighbor Totoro</li>
-                  <li>Kiki's Delivery Service</li>
-                </ul>
-              </TabsContent>
-              <TabsContent value="Games">
-                <ul>
-                  <li>Bioshock</li>
-                  <li>Omori</li>
-                  <li>Fallout 3</li>
-                </ul>
-              </TabsContent>
-            </Tabs>
-          </CardContent>
-        </Card>
       </div>
     </>
   );
